@@ -88,102 +88,84 @@
 
         </header><!-- #header end -->
      
-
-
-        <!-- Contact Form & Map Overlay Section
-        ============================================= -->
-        <section id="map-overlay">
+<section id="page-title">
 
             <div class="container clearfix">
-                <div class="col-md-8 col-sm-6">
-                <!-- Contact Form Overlay
-                ============================================= -->
-                <div id="contact-form-overlay" class="clearfix">
+                <h1>Contact</h1>
+                <span>Get in Touch with Us</span>
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li class="active">Contact</li>
+                </ol>
+            </div>
 
-                    <div class="fancy-title title-dotted-border">
-                        <h3>Send us an Email</h3>
-                        <a href="#" data-gsc-widget="116208">Open widget with ID=82297!</a>
-                    </div>
+        </section>
+<section id="content" style="margin-bottom: 0px;">
 
-                    <div id="contact-form-result" data-notify-type="success" data-notify-msg="<i class=icon-ok-sign></i> Message Sent Successfully!"></div>
+			<div class="content-wrap nobottompadding">
 
-                    <!-- Contact Form
+				
+					<div class="container clearfix">
+					
+                                            <div class="promo promo-border promo-center bottommargin">
+                                                <h3>Call us today at <span>+91.22.57412541</span> or Email us at <span>support@leadsherpaonline.com</span></h3>
+                                                <span>We strive to provide Our Customers with Top Notch Support to make their Theme Experience Wonderful</span>
+                                                <a href="#" data-gsc-widget="116208" class="button button-xlarge button-rounded">Message Us</a>
+                                            </div>
+                                        </div>
+				
+			</div>
+
+		</section>
+        <!-- Contact Form & Map Overlay Section
+        ============================================= -->
+        <section id="map-overlay" class="notoppadding">
+
+            <div class="container clearfix">
+                 <!-- Google Map
                     ============================================= -->
-                    <form class="nobottommargin" id="template-contactform" name="template-contactform" action="mailto:sangoi.tejas@gmail.com" method="post" enctype="text/plain">
+                    <div class="col-md-8 col-sm-6">
 
-                        <div class="col_half">
-                            <label for="template-contactform-name">First Name <small>*</small></label>
-                            <input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" />
-                        </div>
-                        
-                         <div class="col_half col_last">
-                            <label for="template-contactform-lastname">Last Name <small>*</small></label>
-                            <input type="text" id="template-contactform-lname" name="template-contactform-lname" value="" class="required sm-form-control" />
-                        </div>
-                        
-                         <div class="clear"></div>
-                         
-                         <div class="col_half">
-                            <label for="template-contactform-company">Company <small>*</small></label>
-                            <input type="text" id="template-contactform-company" name="template-contactform-company" value="" class="sm-form-control required" />
-                        </div>
-                        
-                         <div class="col_half col_last">
-                            <label for="template-contactform-jobtitle">Job Title <small>*</small></label>
-                            <input type="text" id="template-contactform-jobtitle" name="template-contactform-jobtitle" value="" class="required sm-form-control" />
-                        </div>
-                        <div class="clear"></div>
+                        <section id="google-map" class="gmap" style="height: 410px;"></section>
 
-                        <div class="col_half">
-                            <label for="template-contactform-phone">Phone</label>
-                            <input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control" />
-                        </div>
+                        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+                        <script type="text/javascript" src="js/jquery.gmap.js"></script>
 
-                        <div class="col_half col_last">
-                            <label for="template-contactform-email">Email <small>*</small></label>
-                            <input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control" />
-                        </div>
+                        <script type="text/javascript">
 
-                        <div class="clear"></div>     
-                        
-                         <div class="col_full">
-                            <label for="template-contactform-message">Message <small>*</small></label>
-                            <textarea class="required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30"></textarea>
-                        </div>
-                        
-                        <div class="col_full hidden">
-                            <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
-                        </div>
+                            jQuery('#google-map').gMap({
 
-                        <div class="col_full">
-                            <button class="button button-3d nomargin" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
-                        </div>
-
-                    </form>
-
-                    <script type="text/javascript">
-                        $("#template-contactform").validate({
-                            submitHandler: function(form) {
-                                $('.form-process').fadeIn();
-                                $(form).ajaxSubmit({
-                                    target: '#contact-form-result',
-                                    success: function() {
-                                        $('.form-process').fadeOut();
-                                        $('#template-contactform').find('.sm-form-control').val('');
-                                        $('#contact-form-result').attr('data-notify-msg', $('#contact-form-result').html()).html('');
-                                        SEMICOLON.widget.notifications($('#contact-form-result'));
+                                address: '61 Der Deutsche Parkz, Bhandup, Mumbai',
+                                maptype: 'ROADMAP',
+                                zoom: 14,
+                                markers: [
+                                    {
+                                        address: "61 Der Deutsche Parkz, Bhandup, Mumbai",
+                                        html: '<div style="width: 300px;"><h4 style="margin-bottom: 8px;">Hi, we\'re <span>Envato</span></h4><p class="nobottommargin">Our mission is to help people to <strong>earn</strong> and to <strong>learn</strong> online. We operate <strong>marketplaces</strong> where hundreds of thousands of people buy and sell digital goods every day, and a network of educational blogs where millions learn <strong>creative skills</strong>.</p></div>',
+                                        icon: {
+                                            image: "images/icons/map-icon-red.png",
+                                            iconsize: [32, 39],
+                                            iconanchor: [32,39]
+                                        }
                                     }
-                                });
-                            }
-                        });
-                    </script>
-                    <br>
-                </div>
-                
-                <!-- Contact Form Overlay End -->
-                </div>
-                <div class="col-md-4 col-sm-6" style="background-color: rgb(245, 245, 245); height: 511px;">
-                        <div class="col-padding max-height">
+                                ],
+                                doubleclickzoom: false,
+                                controls: {
+                                    panControl: true,
+                                    zoomControl: true,
+                                    mapTypeControl: true,
+                                    scaleControl: false,
+                                    streetViewControl: false,
+                                    overviewMapControl: false
+                                }
+
+                            });
+
+                        </script>
+
+                    </div><!-- Google Map End -->
+                <div class="col-md-4 col-sm-6" style="background-color: rgb(245, 245, 245);">
+                        <div class="col-padding ">
                                 <h3 class="font-body t400 ls1">Our Offices</h3>
 
                                 <div style="font-size: 16px; line-height: 1.7;">
@@ -200,12 +182,6 @@
                                                 61 Der Deutsche Parkz<br>
                                                 Mumbai, Maharastra 400033<br>
                                         </address>
-
-                                        <div class="clear topmargin"></div>
-
-                                        <abbr title="Phone Number"><strong>Phone:</strong></abbr> (91) 8547 632521<br>
-                                        <abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br>
-                                        <abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
                                 </div>
                         </div>
                 </div>
