@@ -1,58 +1,41 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
 <head>
-
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="Leadsherpa" />
-
-    <!-- Stylesheets
-    ============================================= -->
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
     
-    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-    <link rel="stylesheet" href="css/animate.css" type="text/css" />
-    
+        <title>Contact Us | Leadsherpa</title>	
+        
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="author" content="Leadsherpa" />
 
-    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    
-    <!-- External JavaScripts
-    ============================================= -->
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/plugins.js"></script>
+        <!-- Stylesheets
+        ============================================= -->
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css" />    
+        <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+        <link rel="stylesheet" href="css/animate.css" type="text/css" />
+        <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+        <link rel="stylesheet" href="css/colors.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <!-- Document Title
-    ============================================= -->
-	<title>Contact Us | Leadsherpa</title>
+        <!-- External JavaScripts
+        ============================================= -->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+ 
 
 </head>
 
 <body class="stretched">
 
-    <!-- Document Wrapper
-    ============================================= -->
-    <div id="wrapper" class="clearfix">
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
 
-        <!-- Header
-        ============================================= -->
+        <div w3-include-html="header.html"></div> 
      
 
-        <!-- Page Title
-        ============================================= -->
-        <section id="page-title">
-
-            <div class="container clearfix">
-                <h1>Contact</h1>
-                <span>Get in Touch with Us</span>
-                <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li class="active">Contact</li>
-                </ol>
-            </div>
-
-        </section><!-- #page-title end -->
 
         <!-- Contact Form & Map Overlay Section
         ============================================= -->
@@ -72,7 +55,7 @@
 
                     <!-- Contact Form
                     ============================================= -->
-                    <form class="nobottommargin" id="template-contactform" name="template-contactform" action="include/sendemail.php" method="post">
+                    <form class="nobottommargin" id="template-contactform" name="template-contactform" action="mailto:sangoi.tejas@gmail.com" method="post" enctype="text/plain">
 
                         <div class="col_half">
                             <label for="template-contactform-name">First Name <small>*</small></label>
@@ -187,6 +170,14 @@
     <!-- Footer Scripts
     ============================================= -->
     <script type="text/javascript" src="js/functions.js"></script>
+    <script>
+            w3IncludeHTML();
+    </script>
+    <script>
+  (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+    t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+  })(window, document, '_gscq','script','//widgets.getsitecontrol.com/59310/script.js');
+</script>
 
 </body>
 </html>
