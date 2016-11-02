@@ -94,6 +94,7 @@
 		<!-- Slider
 		============================================= -->
 		<section id="slider" class="slider-parallax full-screen">
+                    <!-- section id="slider" class="slider-parallax full-screen dark slider-parallax-visible" style="background: url(&quot;http://canvashtml-cdn.semicolonweb.com/images/landing/static.jpg&quot;) center center / cover no-repeat; height: 330px;"-->
 
 			<div class="slider-parallax-inner">
 
@@ -200,7 +201,11 @@
                         <li><a href="#"><img src="images/clients/6.png" alt="Clients"></a></li>
                         <li><a href="#"><img src="images/clients/7.png" alt="Clients"></a></li>
                         <li><a href="#"><img src="images/clients/8.png" alt="Clients"></a></li>
-                        <li class="visible-xs"><a href="#"><img src="images/clients/9.png" alt="Clients"></a></li>
+                         <li><a href="#"><img src="images/clients/9.png" alt="Clients"></a></li>
+                          <li><a href="#"><img src="images/clients/10.png" alt="Clients"></a></li>
+                           <li><a href="#"><img src="images/clients/11.png" alt="Clients"></a></li>
+                            <li><a href="#"><img src="images/clients/12.png" alt="Clients"></a></li>
+                        <!--li class="visible-xs"><a href="#"><img src="images/clients/13.png" alt="Clients"></a></li-->
                     </ul>
 
 
@@ -319,20 +324,21 @@
 
 			// Chart Scripts
 			var lineChartData = {
-				labels : ["2010","2011","2012","2013","2013","2014","2015"],
+				labels : ["","","","","","",""],
 				datasets : [
 					{
-						fillColor : "rgba(234,122,123,0.2)",
-						strokeColor : "rgba(234,122,123,0.5)",
-						pointColor : "rgba(220,220,220,0.6)",
-						pointStrokeColor : "#fff",
+						fillColor : "rgba(14,111,185,0.4)",
+						strokeColor : "hsl(206, 86%, 39%)",
+						pointColor : "hsl(206, 86%, 39%)",
+						pointStrokeColor : "hsl(206, 86%, 39%)",
 						data : [10,20,30,45,60,80,100]
 					},
 					{
-						fillColor : "rgba(0,120,255,0.2)",
-						strokeColor : "rgba(0,120,255,0.5)",
-						pointColor : "rgba(220,220,220,0.6)",
-						pointStrokeColor : "#fff",
+						
+                                                fillColor : "rgba(51 ,51 ,51 ,0.4)",
+						strokeColor : "hsl(0, 0%, 20%)",
+						pointColor : "hsl(0, 0%, 20%)",
+						pointStrokeColor : "hsl(0, 0%, 20%)",
 						data : [10,15,20,22,25,30,36]
 					}
 				]
@@ -340,7 +346,19 @@
 
 			var globalGraphSettings = {
 				scaleShowGridLines : false,
-				animation : Modernizr.canvas
+				animation : Modernizr.canvas,
+                                tooltips : {
+                                        enabled: false
+                                    },
+                                    hover: {
+                                        
+                                    },
+                                    scales: {
+                                            xAxes: [{
+                                                display: false
+                                            }]
+                                        }
+                                
 			};
 
 			function showLineChart(){
